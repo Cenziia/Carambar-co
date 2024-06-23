@@ -1,0 +1,19 @@
+
+
+{
+  "development": {
+    "database": {
+      "dialect": "sqlite",
+      "storage": "./database.sqlite"
+    },
+    "port": 3000
+  },
+  "production": {
+    "database": {
+      "dialect": "sqlite",
+      "storage": "./database.sqlite"
+    },
+    "port": 3000
+  }
+}
+  

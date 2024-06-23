@@ -1,0 +1,31 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carambar & co - Blagues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue chez Carambar & co</h1>
+    </header>
+    <main>
+        <div id="joke-container">
+            <p id="jokes-content">Cliquez sur le bouton pour afficher une blague aléatoire.</p>
+            <button id="fetch-joke-btn">Afficher une blague</button>
+        </div>
+
+        <hr>
+
+        <form id="add-joke-form">
+            <label for="joke-content">Ajouter une nouvelle blague :</label><br>
+            <textarea id="joke-content" name="joke-content" rows="4" cols="50" required></textarea><br>
+            <button type="submit">Ajouter la blague</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
