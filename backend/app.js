@@ -13,7 +13,7 @@ const { addAlias } = require('module-alias');
 
 // Alias pour le répertoire 'models'
 addAlias('@models', `${__dirname}/models`);
-
+addAlias('@config', `${__dirname}/config`);
 // Utiliser cors
 app.use(cors());
 
