@@ -3,7 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const swaggerUi = require('swagger-ui-express');
-const swaggerSpec = require('./docs/swagger');
+const swaggerSpec = require('../docs/swagger');
 const cors = require('cors'); // Importer cors
 
 const app = express();

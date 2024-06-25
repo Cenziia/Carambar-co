@@ -1,6 +1,6 @@
-// v2/controllers/jokeController.js
+// v1/controllers/jokeController.js
 
-const { Joke } = require('../../models');  
+const { Joke } = require('../../../models');  
 const sequelize = require('../../config/config');
 
 // Récupérer toutes les blagues

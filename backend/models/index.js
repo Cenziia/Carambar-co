@@ -2,7 +2,7 @@
 
  
 
-const sequelize = require('../config/config');
+const sequelize = require('../backend/config/config');
 const Joke = require('./joke');
 
 module.exports = { sequelize, Joke };

@@ -1,0 +1,48 @@
+/* public/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  #joke-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #joke-content {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #btn-random-joke {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  #btn-random-joke:hover {
+    background-color: #2d4373;
+  }
+  
