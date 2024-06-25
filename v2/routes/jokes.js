@@ -1,5 +1,5 @@
-// routes/index.js
- 
+
+//v2/routes/jokes.js
 
 const express = require('express');
 const router = express.Router();
@@ -45,7 +45,9 @@ router.get('/jokes', jokeController.getAllJokes);
  *                 content:
  *                   type: string
  */
-router.get('/jokes/random', jokeController.getRandomJoke);
+//router.get('/random', jokeController.getRandomJoke);
+router.get('/jokes/random', jokesController.getRandomJoke);
+
 
 /**
  * @swagger

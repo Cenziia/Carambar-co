@@ -16,10 +16,16 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 
+// Import and use versioned routes
+const v1 = require('./v1');
+const v2 = require('./v2');
 
-// Routes
+app.use('/api/v1', v1);
+app.use('/api/v2', v2);
+
+/*// Routes
 const jokeRoutes = require('./routes/index');
-app.use('/api', jokeRoutes); // Préfixe "/api" pour les routes
+app.use('/api', jokeRoutes); // Préfixe "/api" pour les routes*/
 
 // Swagger documentation
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));

@@ -1,7 +1,7 @@
-// controllers/jokeController.js
+// v1/controllers/jokeController.js
 
-const { Joke } = require('../models');  
-const sequelize = require('../config/config');
+const { Joke } = require('../../models');  
+const sequelize = require('../../config/config');
 
 // Récupérer toutes les blagues
 exports.getAllJokes = async (req, res) => {

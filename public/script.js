@@ -1,9 +1,15 @@
 // public/script.js
 
 
+// Définir la version de l'API
+const apiVersion = 'v1';
+
   // Récupérer une blague aléatoire
   document.getElementById('fetch-joke-btn').addEventListener('click', function() {
-    fetch('http://localhost:3000/api/jokes/random')
+    
+    const apiUrl = `http://localhost:3000/api/${apiVersion}/jokes/random`;
+
+    fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -21,8 +27,9 @@ document.getElementById('add-joke-form').addEventListener('submit', function(eve
     event.preventDefault();
 
     const jokeContent = document.getElementById('joke-content').value;
+    const apiUrl = `http://localhost:3000/api/${apiVersion}/jokes`;
 
-    fetch('http://localhost:3000/api/jokes', {
+    fetch(apiUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
