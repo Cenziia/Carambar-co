@@ -2,13 +2,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: black;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: #3b5998;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -21,15 +20,22 @@ body {
   }
   
   #joke-container {
-    background-color: white;
+    background-color: lightgrey;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
   #joke-content {
     font-size: 18px;
     margin-bottom: 10px;
+    background-color: lightgray;
+  }
+
+  #add-joke-form {
+    text-align: center;
+    margin-top: 3em;
   }
   
   #btn-random-joke {
@@ -46,3 +52,23 @@ body {
     background-color: #2d4373;
   }
   
+  .header-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+  }
+
+  .add-joke-title {
+  color: white;
+  }
+
+  textarea {
+  margin-top: 1em;
+  }
+
+  .footer-img {
+    max-width: 30em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4em;
+  }

@@ -9,11 +9,11 @@ const cors = require('cors'); // Importer cors
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const { addAlias } = require('module-alias');
+//const { addAlias } = require('module-alias');
 
-// Alias pour le répertoire 'models'
-addAlias('@models', `${__dirname}/models`);
-addAlias('@config', `${__dirname}/config/config`);
+// Alias pour le répertoire 'models' 'config'
+//addAlias('@models', `${__dirname}/models`);
+//addAlias('@config', `${__dirname}/config/config`);
 
 // Utiliser cors
 app.use(cors());
