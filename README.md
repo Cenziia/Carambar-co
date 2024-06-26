@@ -27,5 +27,5 @@ Bienvenue dans l'application web de blagues Carambar & co !
 - `models/` : Modèles Sequelize pour la base de données
 - `controllers/` : Logique métier des endpoints
 - `routes/` : Définition des routes de l'API
-- `docs/` : Documentation Swagger
+- `swagger/` : Documentation Swagger
 
